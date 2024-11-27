@@ -334,7 +334,7 @@ func _ready():
 func get_noise(x:float, y:float, z:float):
 	if y <= 1:
 		return 0.3
-	return noise.get_noise_3d(x * 5, y * 5, z * 5) * (6/ y)
+	return noise.get_noise_3d(x * 5, y * 5, z * 6) * (6/ y)
 
 func atovec3(x):
 	return Vector3(x[0], x[1], x[2])
